@@ -86,7 +86,8 @@ for cpt_shot=1:1:size(RAW1,3)
 end    
 ImgCar=sqrt(sum(ImgCar.^2,4));
 
-figure, imagescn(abs(ImgCar))
+figure, imshow(abs(ImgCar(:,:,1)))
+figure, imshow(abs(ImgCar(:,:,end)))
 
 RAW1=reshape(RAW1,size(RAW1,1)*size(RAW1,2),size(RAW1,3),size(RAW1,4));
 
